@@ -1,0 +1,20 @@
+.description-container {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  text-align: center; 
+}
+
+/*Color del nombre que va separado del resto de elementos de la descripcion */
+.description-container h2 {
+  margin-bottom: 10px;
+  color: #6a0dad;
+}
+
+.description-container p {
+  margin: 10px 0;
+}

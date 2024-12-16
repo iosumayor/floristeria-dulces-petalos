@@ -1,0 +1,47 @@
+.product-details {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px;
+}
+
+.details-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  gap: 20px;
+}
+
+.details-image-description {
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-between;
+  align-items: stretch; 
+  width: 100%;
+  gap: 20px;
+}
+
+.details-image-description > * {
+  flex: 1;
+  max-width: 50%; 
+  display: flex; 
+  flex-direction: column;
+}
+
+/*Modificaciones para móviles... */
+@media (max-width: 768px) {
+  .details-image-description {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .details-image-description > * {
+    max-width: 100%; 
+  }
+
+  .image-container img {
+    max-height: 300px; 
+  }
+}

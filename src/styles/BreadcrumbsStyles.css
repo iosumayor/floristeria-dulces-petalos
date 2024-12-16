@@ -1,0 +1,23 @@
+
+.breadcrumbs {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 10px;
+    font-size: 10px;
+  }
+  
+  .breadcrumbs li {
+    display: inline;
+  }
+  
+  .breadcrumbs a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .breadcrumbs span {
+    color: #555;
+  }
+  

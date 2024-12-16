@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+      "target": "es5", // Esto asegura compatibilidad con navegadores antiguos.
+      "lib": ["dom", "esnext"], // Esto incluye las librerías necesarias para trabajar con el DOM y funciones ES.
+      "jsx": "react-jsx", // Especifica cómo se debe compilar JSX.
+      "moduleResolution": "node", // Permite que el sistema de módulos funcione de la manera más común.
+      "esModuleInterop": true, // Habilita la interoperabilidad entre módulos ES y CommonJS.
+      "allowJs": true, // Permite la compilación de archivos .js junto con .ts y .tsx.
+      "skipLibCheck": true, // Evita verificar los tipos de los archivos de las dependencias.
+      "forceConsistentCasingInFileNames": true, // Asegura que las importaciones respeten las mayúsculas y minúsculas.
+      "baseUrl": "src"
+    },
+    "include": [
+      "src" // Especifica la carpeta donde están tus archivos fuente (en la mayoría de los casos será "src").
+    ],
+    "exclude": [
+      "node_modules" // Excluye la carpeta "node_modules" de la compilación.
+    ]
+  }
+  

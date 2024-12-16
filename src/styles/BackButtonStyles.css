@@ -1,0 +1,24 @@
+.back-button {
+  grid-area: back;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px 20px;
+  font-size: 1.5rem; /*Para hacer que la fuente sea igual que la de la cabecera */
+  font-weight: bold; 
+  color: black; /* Color de texto igual a la cabecera */
+  background-color: #f8f9fa; /* Mismo fondo que la cabecera */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin-left: 75%; /* las dos siguientes hace que se muestre a la izquierda*/
+  width: 25%; 
+}
+
+/*Cambios al pasar el cursor */
+.back-button:hover {
+  background-color: #e07b39; 
+  color: white; 
+}

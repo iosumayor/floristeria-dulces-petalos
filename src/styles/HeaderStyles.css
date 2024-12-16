@@ -1,0 +1,117 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f8f9fa;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo-breadcrumb-space {
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+}
+
+.logo img {
+  width: 50px;
+  height: auto;
+  max-height: 50px;
+  border-radius: 50%;
+}
+
+.header a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.header a:hover {
+  color: #ff6f61;
+}
+
+.breadcrumbs {
+  font-size: 14px;
+  margin-top: 0; 
+  padding-left: 10px; 
+}
+
+.breadcrumbs ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.breadcrumbs li {
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumbs li:not(:last-child)::after {
+  content: ">";
+  margin: 0 8px;
+  color: black;
+  size: 3rem;
+}
+
+.breadcrumbs a {
+  text-decoration: none;
+  color: black;
+}
+
+.breadcrumbs a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumbs span {
+  color: #5e5e5e; 
+}
+
+/* Estilos para móviles... */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column; 
+    align-items: center; 
+    padding: 10px;
+  }
+
+  .logo-breadcrumb-space {
+    flex-direction: column;
+    align-items: center; 
+    padding: 10px;
+  }
+
+  .logo img {
+    width: 40px; 
+    max-height: 40px;
+  }
+
+  .header a {
+    font-size: 1.2rem; 
+  }
+
+  .breadcrumbs {
+    font-size: 12px; 
+    margin-top: 5px;
+  }
+
+  .breadcrumbs ul {
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+  .breadcrumbs li {
+    margin-bottom: 5px; 
+  }
+
+  .breadcrumbs li:not(:last-child)::after {
+    margin: 0 4px; 
+  }
+
+  .breadcrumbs span {
+    font-size: 12px; 
+  }
+}
